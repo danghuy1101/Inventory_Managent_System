@@ -1,0 +1,153 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = WebUI
+build_property.RootNamespace = WebUI
+build_property.ProjectDir = C:\Users\DELL\Downloads\DemoBlazorISInventoryManagerSystem\WebUI\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\DELL\Downloads\DemoBlazorISInventoryManagerSystem\WebUI
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 8.0
+build_property.EnableCodeStyleSeverity = 
+
+[C:/Users/DELL/Downloads/DemoBlazorISInventoryManagerSystem/WebUI/Components/App.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBcHAucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DELL/Downloads/DemoBlazorISInventoryManagerSystem/WebUI/Components/Layout/Footer.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcRm9vdGVyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DELL/Downloads/DemoBlazorISInventoryManagerSystem/WebUI/Components/Layout/Identity/AuthenticationLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcSWRlbnRpdHlcQXV0aGVudGljYXRpb25MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DELL/Downloads/DemoBlazorISInventoryManagerSystem/WebUI/Components/Layout/Identity/RedirectToLogin.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcSWRlbnRpdHlcUmVkaXJlY3RUb0xvZ2luLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DELL/Downloads/DemoBlazorISInventoryManagerSystem/WebUI/Components/Layout/Navigationbar/NavItems.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTmF2aWdhdGlvbmJhclxOYXZJdGVtcy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DELL/Downloads/DemoBlazorISInventoryManagerSystem/WebUI/Components/Layout/Navigationbar/OnMobileScreenLogo.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTmF2aWdhdGlvbmJhclxPbk1vYmlsZVNjcmVlbkxvZ28ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DELL/Downloads/DemoBlazorISInventoryManagerSystem/WebUI/Components/Layout/Sidebar/Brand.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcU2lkZWJhclxCcmFuZC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DELL/Downloads/DemoBlazorISInventoryManagerSystem/WebUI/Components/Layout/Sidebar/Content.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcU2lkZWJhclxDb250ZW50LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DELL/Downloads/DemoBlazorISInventoryManagerSystem/WebUI/Components/Pages/Content/AdminHomeHeader.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDb250ZW50XEFkbWluSG9tZUhlYWRlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DELL/Downloads/DemoBlazorISInventoryManagerSystem/WebUI/Components/Pages/Content/Banner.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDb250ZW50XEJhbm5lci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DELL/Downloads/DemoBlazorISInventoryManagerSystem/WebUI/Components/Pages/Content/ClientHomeHeader.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDb250ZW50XENsaWVudEhvbWVIZWFkZXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DELL/Downloads/DemoBlazorISInventoryManagerSystem/WebUI/Components/Pages/Content/Home.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDb250ZW50XEhvbWUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DELL/Downloads/DemoBlazorISInventoryManagerSystem/WebUI/Components/Pages/Content/HomePageGraph.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDb250ZW50XEhvbWVQYWdlR3JhcGgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DELL/Downloads/DemoBlazorISInventoryManagerSystem/WebUI/Components/Pages/Content/HomeSkeletonLoader.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDb250ZW50XEhvbWVTa2VsZXRvbkxvYWRlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DELL/Downloads/DemoBlazorISInventoryManagerSystem/WebUI/Components/Pages/Content/Products/Category/CategoryPage.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDb250ZW50XFByb2R1Y3RzXENhdGVnb3J5XENhdGVnb3J5UGFnZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DELL/Downloads/DemoBlazorISInventoryManagerSystem/WebUI/Components/Pages/Content/Products/Location/LocationPage.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDb250ZW50XFByb2R1Y3RzXExvY2F0aW9uXExvY2F0aW9uUGFnZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DELL/Downloads/DemoBlazorISInventoryManagerSystem/WebUI/Components/Pages/Content/Products/Orders/AdminOrders.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDb250ZW50XFByb2R1Y3RzXE9yZGVyc1xBZG1pbk9yZGVycy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DELL/Downloads/DemoBlazorISInventoryManagerSystem/WebUI/Components/Pages/Content/Products/Orders/ClientOrders.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDb250ZW50XFByb2R1Y3RzXE9yZGVyc1xDbGllbnRPcmRlcnMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DELL/Downloads/DemoBlazorISInventoryManagerSystem/WebUI/Components/Pages/Content/Products/ProductDetails.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDb250ZW50XFByb2R1Y3RzXFByb2R1Y3REZXRhaWxzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DELL/Downloads/DemoBlazorISInventoryManagerSystem/WebUI/Components/Pages/Content/Products/ProductPage.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDb250ZW50XFByb2R1Y3RzXFByb2R1Y3RQYWdlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DELL/Downloads/DemoBlazorISInventoryManagerSystem/WebUI/Components/Pages/Error.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFcnJvci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DELL/Downloads/DemoBlazorISInventoryManagerSystem/WebUI/Components/Pages/General/GenericSpinnerButton.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xHZW5lcmFsXEdlbmVyaWNTcGlubmVyQnV0dG9uLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DELL/Downloads/DemoBlazorISInventoryManagerSystem/WebUI/Components/Pages/Identity/AccessDenied.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xJZGVudGl0eVxBY2Nlc3NEZW5pZWQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DELL/Downloads/DemoBlazorISInventoryManagerSystem/WebUI/Components/Pages/Identity/Administration/AddUserPage.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xJZGVudGl0eVxBZG1pbmlzdHJhdGlvblxBZGRVc2VyUGFnZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DELL/Downloads/DemoBlazorISInventoryManagerSystem/WebUI/Components/Pages/Identity/Administration/ManageUsersPage.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xJZGVudGl0eVxBZG1pbmlzdHJhdGlvblxNYW5hZ2VVc2Vyc1BhZ2UucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DELL/Downloads/DemoBlazorISInventoryManagerSystem/WebUI/Components/Pages/Identity/Administration/UserManagementActivityLogPage.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xJZGVudGl0eVxBZG1pbmlzdHJhdGlvblxVc2VyTWFuYWdlbWVudEFjdGl2aXR5TG9nUGFnZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DELL/Downloads/DemoBlazorISInventoryManagerSystem/WebUI/Components/Pages/Identity/Administration/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xJZGVudGl0eVxBZG1pbmlzdHJhdGlvblxfSW1wb3J0cy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DELL/Downloads/DemoBlazorISInventoryManagerSystem/WebUI/Components/Pages/Identity/AuthenticationPage.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xJZGVudGl0eVxBdXRoZW50aWNhdGlvblBhZ2UucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DELL/Downloads/DemoBlazorISInventoryManagerSystem/WebUI/Components/Pages/Identity/LoginPage.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xJZGVudGl0eVxMb2dpblBhZ2UucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DELL/Downloads/DemoBlazorISInventoryManagerSystem/WebUI/Components/Pages/Identity/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xJZGVudGl0eVxfSW1wb3J0cy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DELL/Downloads/DemoBlazorISInventoryManagerSystem/WebUI/Components/Routes.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xSb3V0ZXMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DELL/Downloads/DemoBlazorISInventoryManagerSystem/WebUI/Components/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xfSW1wb3J0cy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DELL/Downloads/DemoBlazorISInventoryManagerSystem/WebUI/Components/Layout/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTWFpbkxheW91dC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-ty40ro175p

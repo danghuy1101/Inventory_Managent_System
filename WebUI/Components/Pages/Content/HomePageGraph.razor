@@ -1,0 +1,128 @@
+﻿@attribute [StreamRendering]
+@using Syncfusion.Blazor.Charts
+@inject IServiceProvider sProvider 
+@inject ILocalStorageService localStorageService
+
+<div class="row" style="height:85vh;">
+    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+        <div class="card shadow-lg border-1">
+            <div class="card-body">
+                @if (ProductOrderdByMonthsResponseDTOs.Count() == 0)
+                {
+                    <HomeSkeletonLoader />
+                }
+                else
+                {
+                    <SfChart Title="Product Orders Analysis" Palettes="@chart1">
+                        <ChartPrimaryXAxis LabelFormat="c" Title="Total Amount in Dollar" />
+                        <ChartPrimaryXAxis ValueType="Syncfusion.Blazor.Charts.ValueType.Category" Title="Amount within 12 Months"></ChartPrimaryXAxis>
+                        <ChartTooltipSettings Enable="true"></ChartTooltipSettings>
+                        <ChartLegendSettings Visible="true"></ChartLegendSettings>
+                        <ChartSeriesCollection>
+                            <ChartSeries DataSource="@ProductOrderdByMonthsResponseDTOs" XName="MonthName" YName="TotalAmount" Type="ChartSeriesType.Column">
+                                <ChartMarker>
+                                    <ChartDataLabel Visible="true"></ChartDataLabel>
+                                </ChartMarker>
+                            </ChartSeries>
+                        </ChartSeriesCollection>
+                    </SfChart>
+                }
+            </div>
+        </div>
+    </div>
+
+    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+        <div class="card shadow-lg border-1">
+            <div class="card-body">
+                @if (ProductOrderedPrductsWithQuantityResponseDTOs.Count() == 0)
+                {
+                    <HomeSkeletonLoader />
+                }
+                else
+                {
+                    <SfChart Title="Product Orders Analysis" Palettes="@chart2">
+                        <ChartPrimaryXAxis Title="Total Products Ordered within 12 Months" />
+                        <ChartPrimaryXAxis ValueType="Syncfusion.Blazor.Charts.ValueType.Category" Title="Quantity Ordered within 12 Months"></ChartPrimaryXAxis>
+                        <ChartTooltipSettings Enable="true"></ChartTooltipSettings>
+                        <ChartLegendSettings Visible="true"></ChartLegendSettings>
+                        <ChartSeriesCollection>
+                            <ChartSeries DataSource="@ProductOrderedPrductsWithQuantityResponseDTOs" XName="ProductName" YName="QuantityOrdered" Type="ChartSeriesType.Column">
+                                <ChartMarker>
+                                    <ChartDataLabel Visible="true"></ChartDataLabel>
+                                </ChartMarker>
+                            </ChartSeries>
+                        </ChartSeriesCollection>
+                    </SfChart>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    public String[] chart1 = new String[] { "#F6B53F" };
+    public String[] chart2 = new String[] { "#00CCCD" };
+    private IEnumerable<GetProductOrderdByMonthsResponseDTO> ProductOrderdByMonthsResponseDTOs = new List<GetProductOrderdByMonthsResponseDTO>();
+    private IEnumerable<GetOrderedPrductsWithQuantityResponseDTO> ProductOrderedPrductsWithQuantityResponseDTOs = new List<GetOrderedPrductsWithQuantityResponseDTO>();
+    
+    [CascadingParameter] public Task<AuthenticationState>? AuthenticationState { get; set; }
+    ClaimsPrincipal? User;
+    private string Role = string.Empty;
+    private string UserId = string.Empty;
+    
+    protected async override Task OnInitializedAsync()
+    {
+        User = (await AuthenticationState!).User;
+        if (User != null)
+        {
+            Role = User!.Claims.FirstOrDefault(_ => _.Type == ClaimTypes.Role)!.Value;
+            UserId = User!.Claims.FirstOrDefault(_ => _.Type == ClaimTypes.NameIdentifier)!.Value;
+        }
+    }
+
+    protected async override Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            string state = await localStorageService.GetEncryptedItemAsStringAsync("reload");
+            if (!string.IsNullOrEmpty(state))
+            {
+                await GetChartData1();
+                await GetChartData2();
+            }
+        }
+    }
+
+    async Task GetChartData1()
+    {
+        using (var scope = sProvider.CreateScope())
+        {
+            var mediator = scope.ServiceProvider.GetRequiredService<IMediator>();
+
+            if (Role.Equals("Admin"))
+                ProductOrderdByMonthsResponseDTOs = await mediator.Send(new GetProductOrderdByMonthsQuery(null));
+            else
+                ProductOrderdByMonthsResponseDTOs = await mediator.Send(new GetProductOrderdByMonthsQuery(UserId));
+        }
+    }
+
+    async Task GetChartData2()
+    {
+        try
+        {
+            using (var scope = sProvider.CreateScope())
+            {
+                var mediator = scope.ServiceProvider.GetRequiredService<IMediator>();
+                if (Role.Equals("Admin"))
+                    ProductOrderedPrductsWithQuantityResponseDTOs = (await mediator.Send(new GetOrderedPrductsWithQuantityQuery(null)));
+                else
+                    ProductOrderedPrductsWithQuantityResponseDTOs = (await mediator.Send(new GetOrderedPrductsWithQuantityQuery(UserId)));
+            }
+        }
+        catch (Exception ex)
+        {
+            // Handle or log the exception
+            Console.WriteLine($"An error occured: {ex.Message}");
+        }
+    }
+}

@@ -1,0 +1,18 @@
+{
+  "version": "3.0",
+  "defaultProvider": "cdnjs",
+  "libraries": [
+    {
+      "library": "bootstrap-material-design-icons@2.2.0",
+      "destination": "wwwroot/bootstrap-material-design-icons/"
+    },
+    {
+      "library": "bootstrap-material-design@4.0.2",
+      "destination": "wwwroot/bootstrap-material-design/"
+    },
+    {
+      "library": "bootstrap-icons@1.11.3",
+      "destination": "wwwroot/bootstrap-icons/"
+    }
+  ]
+}
